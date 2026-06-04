@@ -1,9 +1,9 @@
 function createTable() {
     //Write your code here
-	cosnt rows = parseInt(prompt("Input number of rows"));
+	const rows = parseInt(prompt("Input number of rows"));
 	const column = parseInt(prompt("Input number of columns"));
 
-	if (isNan(rows) || isNaN(column)  || rows <= 0 || column <= 0) {
+	if (isNaN(rows) || isNaN(column)  || rows <= 0 || column <= 0) {
 		alert("Invalid input");
 		return;
 	}
@@ -13,7 +13,7 @@ function createTable() {
 	table.innerHTML ="";
 
 
-	for(let i=0; j < rows; i++) {
+	for(let i = 0; j < rows; i++) {
 		const tr = document.createElement("tr");
 
 
